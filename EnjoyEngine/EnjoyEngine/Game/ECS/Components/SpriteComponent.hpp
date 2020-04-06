@@ -1,8 +1,8 @@
 #pragma once
-#include "Component.hpp"
-#include "SFML/Graphics.hpp"
-#include "AssetManager.hpp"
-#include "Definitions.hpp"
+#include "../../../GameEngine/ECS/Component/Component.hpp"
+#include "../../../GameEngine/Managers/AssetManager/AssetManager.hpp"
+#include "../../../Helpers/Definitions.hpp"
+#include <SFML/Graphics.hpp>
 
 #include <vector>
 

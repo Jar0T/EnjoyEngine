@@ -1,9 +1,9 @@
 #pragma once
-#include "System.hpp"
-#include "ClickableComponent.hpp"
-#include "ColliderComponent.hpp"
-#include "Vectors.hpp"
-#include "VariableManager.hpp"
+#include "../../../GameEngine/ECS/System/System.hpp"
+#include "../Components/ClickableComponent.hpp"
+#include "../Components/ColliderComponent.hpp"
+#include "../../../Helpers/Vectors.hpp"
+#include "../../Managers/VariableManager/VariableManager.hpp"
 #include <Windows.h>
 
 namespace EnjoyEngine {

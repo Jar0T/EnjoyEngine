@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
 
-#include "System.hpp"
+#include "../System.hpp"
 
 namespace EnjoyEngine {
 	class SystemManager {

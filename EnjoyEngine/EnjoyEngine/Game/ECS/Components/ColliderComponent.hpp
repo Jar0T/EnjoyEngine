@@ -1,7 +1,8 @@
 #pragma once
-#include "Component.hpp"
+#include "../../../GameEngine/ECS/Component/Component.hpp"
+#include "../../../GameEngine/GameObjects/GameObject.hpp"
 #include <vector>
-#include "GameObject.hpp"
+
 
 namespace EnjoyEngine {
 	class ColliderComponent : public Component {

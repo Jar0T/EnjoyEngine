@@ -1,20 +1,20 @@
 #pragma once
-#include "State.hpp"
-#include "Game.hpp"
+#include "../../GameEngine/StateMachine/State.hpp"
+#include "../../GameEngine/Game/Game.hpp"
 
-#include "SystemManager.hpp"
-#include "SettingsManager.hpp"
+#include "../../GameEngine/ECS/System/Manager/SystemManager.hpp"
+#include "../Managers/SettingsManager/SettingsManager.hpp"
 
-#include "Definitions.hpp"
-#include "ComponentHeaders.hpp"
+#include "../../Helpers/Definitions.hpp"
+#include "../ECS/Components/ComponentHeaders.hpp"
 
-#include "SpriteSystem.hpp"
-#include "ClickableSystem.hpp"
-#include "TransformSystem.hpp"
-#include "ColliderSystem.hpp"
+#include "../ECS/Systems/SpriteSystem.hpp"
+#include "../ECS/Systems/ClickableSystem.hpp"
+#include "../ECS/Systems/TransformSystem.hpp"
+#include "../ECS/Systems/ColliderSystem.hpp"
 
-#include "Slider.hpp"
-#include "Player.hpp"
+#include "../GameObjects/Slider/Slider.hpp"
+#include "../GameObjects/Player/Player.hpp"
 
 namespace EnjoyEngine {
 	class MainMenuState : public State {

@@ -3,9 +3,9 @@
 #include <bitset>
 #include <memory>
 
-#include "Definitions.hpp"
+#include "../../../Helpers/Definitions.hpp"
 #include "EntityManager.hpp"
-#include "ComponentManager.hpp"
+#include "../Component/Manager/ComponentManager.hpp"
 
 namespace EnjoyEngine {
 	class Entity {

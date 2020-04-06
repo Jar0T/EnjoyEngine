@@ -1,9 +1,9 @@
 #pragma once
 #include <memory>
 
-#include "SFML/Graphics.hpp"
-#include "StateMachine.hpp"
-#include "Vectors.hpp"
+#include <SFML/Graphics.hpp>
+#include "../StateMachine/StateMachine.hpp"
+#include "../../Helpers/Vectors.hpp"
 
 namespace EnjoyEngine {
 	struct GameData {

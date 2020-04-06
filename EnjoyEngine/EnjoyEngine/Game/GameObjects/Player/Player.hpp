@@ -1,11 +1,11 @@
 #pragma once
-#include "GameObject.hpp"
-#include "Vectors.hpp"
-#include "ComponentHeaders.hpp"
-#include "AssetManager.hpp"
-#include "VariableManager.hpp"
-#include "Spell.hpp"
-#include "FireBallSpell.hpp"
+#include "../../../GameEngine/GameObjects/GameObject.hpp"
+#include "../../../Helpers/Vectors.hpp"
+#include "../../ECS/Components/ComponentHeaders.hpp"
+#include "../../../GameEngine/Managers/AssetManager/AssetManager.hpp"
+#include "../../Managers/VariableManager/VariableManager.hpp"
+#include "../Spells/Spell.hpp"
+#include "../Spells/FireBall/FireBallSpell.hpp"
 
 namespace EnjoyEngine {
 	class Player : public GameObject {

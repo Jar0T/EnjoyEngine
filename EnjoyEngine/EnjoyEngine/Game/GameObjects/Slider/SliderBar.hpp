@@ -1,7 +1,7 @@
 #pragma once
-#include "GameObject.hpp"
-#include "Vectors.hpp"
-#include "ComponentHeaders.hpp"
+#include "../../../GameEngine/GameObjects/GameObject.hpp"
+#include "../../../Helpers/Vectors.hpp"
+#include "../../ECS/Components/ComponentHeaders.hpp"
 
 namespace EnjoyEngine {
 	class SliderBar : public GameObject {

@@ -1,9 +1,9 @@
 #pragma once
-#include "System.hpp"
-#include "TransformComponent.hpp"
-#include "SpriteComponent.hpp"
-#include "ColliderComponent.hpp"
-#include "SettingsManager.hpp"
+#include "../../../GameEngine/ECS/System/System.hpp"
+#include "../Components/TransformComponent.hpp"
+#include "../Components/SpriteComponent.hpp"
+#include "../Components/ColliderComponent.hpp"
+#include "../../Managers/SettingsManager/SettingsManager.hpp"
 
 namespace EnjoyEngine {
 	class SpriteSystem : public System {

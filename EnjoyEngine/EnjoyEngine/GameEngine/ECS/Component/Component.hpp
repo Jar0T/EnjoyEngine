@@ -1,5 +1,5 @@
 #pragma once
-#include "Definitions.hpp"
+#include "../../../Helpers/Definitions.hpp"
 
 namespace EnjoyEngine {
 	inline ComponentTypeID getComponentTypeID() {

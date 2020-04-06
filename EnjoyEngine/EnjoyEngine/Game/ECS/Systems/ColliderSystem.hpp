@@ -1,7 +1,7 @@
 #pragma once
-#include "System.hpp"
-#include "SFML/Graphics.hpp"
-#include "ColliderComponent.hpp"
+#include "../../../GameEngine/ECS/System/System.hpp"
+#include "../Components/ColliderComponent.hpp"
+#include <SFML/Graphics.hpp>
 
 namespace EnjoyEngine {
 	class ColliderSystem : public System {

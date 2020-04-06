@@ -1,5 +1,5 @@
 #pragma once
-#include "Spell.hpp"
+#include "../Spell.hpp"
 #include "FireBall.hpp"
 
 namespace EnjoyEngine {

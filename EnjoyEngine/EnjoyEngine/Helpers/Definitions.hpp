@@ -1,5 +1,5 @@
 #pragma once
-#include "SFML/System.hpp"
+#include <SFML/System.hpp>
 
 #define SCREEN_WIDTH_720p 1280
 #define SCREEN_HEIGHT_720p 720

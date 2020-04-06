@@ -2,8 +2,8 @@
 #include <map>
 #include <memory>
 
-#include "ComponentMap.hpp"
-#include "Component.hpp"
+#include "../Map/ComponentMap.hpp"
+#include "../Component.hpp"
 
 namespace EnjoyEngine {
 	class ComponentManager {

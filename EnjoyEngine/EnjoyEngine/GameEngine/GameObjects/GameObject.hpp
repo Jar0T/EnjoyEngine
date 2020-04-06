@@ -1,6 +1,6 @@
 #pragma once
-#include "Entity.hpp"
-#include "Vectors.hpp"
+#include "../ECS/Entity/Entity.hpp"
+#include "../../Helpers/Vectors.hpp"
 
 namespace EnjoyEngine {
 	class GameObject {

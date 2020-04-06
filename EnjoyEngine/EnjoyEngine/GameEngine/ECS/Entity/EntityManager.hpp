@@ -2,7 +2,7 @@
 #include <vector>
 #include <queue>
 
-#include "Definitions.hpp"
+#include "../../../Helpers/Definitions.hpp"
 
 namespace EnjoyEngine {
 	class EntityManager {

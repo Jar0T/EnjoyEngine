@@ -1,5 +1,5 @@
 #pragma once
-#include "Vectors.hpp"
+#include "../../../Helpers/Vectors.hpp"
 
 namespace EnjoyEngine {
 	class Spell {

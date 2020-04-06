@@ -1,7 +1,8 @@
 #pragma once
 
-#include "EntityManager.hpp"
-#include "ComponentManager.hpp"
+#include <SFML/Graphics.hpp>
+#include "../Entity/EntityManager.hpp"
+#include "../Component/Manager/ComponentManager.hpp"
 
 namespace EnjoyEngine {
 	class System {

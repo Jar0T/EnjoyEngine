@@ -1,6 +1,6 @@
 #pragma once
-#include "Component.hpp"
-#include "GameObject.hpp"
+#include "../../../GameEngine/ECS/Component/Component.hpp"
+#include "../../../GameEngine/GameObjects/GameObject.hpp"
 
 namespace EnjoyEngine {
 	class ClickableComponent : public Component {

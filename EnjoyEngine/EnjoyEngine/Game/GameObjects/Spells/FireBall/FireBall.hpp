@@ -1,7 +1,7 @@
 #pragma once
-#include "GameObject.hpp"
-#include "ComponentHeaders.hpp"
-#include "Vectors.hpp"
+#include "../../../GameEngine/GameObjects/GameObject.hpp"
+#include "../../../ECS/Components/ComponentHeaders.hpp"
+#include "../../../Helpers/Vectors.hpp"
 
 namespace EnjoyEngine {
 	class FireBall : public GameObject {

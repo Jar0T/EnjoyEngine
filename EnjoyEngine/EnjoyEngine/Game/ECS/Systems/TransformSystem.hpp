@@ -1,8 +1,8 @@
 #pragma once
-#include "System.hpp"
-#include "TransformComponent.hpp"
-#include "ColliderComponent.hpp"
-#include "SFML/Graphics.hpp"
+#include "../../../GameEngine/ECS/System/System.hpp"
+#include "../Components/TransformComponent.hpp"
+#include "../Components/ColliderComponent.hpp"
+#include <SFML/Graphics.hpp>
 
 namespace EnjoyEngine {
 	class TransformSystem : public System {

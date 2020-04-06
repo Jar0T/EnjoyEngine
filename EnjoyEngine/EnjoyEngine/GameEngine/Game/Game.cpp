@@ -1,5 +1,5 @@
 #include "Game.hpp"
-#include "MainMenuState.hpp"
+#include "../../Game/States/MainMenuState.hpp"
 
 namespace EnjoyEngine {
 	void Game::Init(int wWidth, int wHeight, const char* wTitle) {

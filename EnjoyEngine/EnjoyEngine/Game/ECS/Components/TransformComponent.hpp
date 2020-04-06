@@ -1,6 +1,6 @@
 #pragma once
-#include "Component.hpp"
-#include "Vectors.hpp"
+#include "../../../GameEngine/ECS/Component/Component.hpp"
+#include "../../../Helpers/Vectors.hpp"
 
 namespace EnjoyEngine {
 	class TransformComponent : public Component {
