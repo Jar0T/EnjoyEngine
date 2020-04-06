@@ -150,12 +150,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GameEngine\StateMachine\StateMachine.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="StateMachine\StateMachine.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="StateMachine\State.hpp" />
-    <ClInclude Include="StateMachine\StateMachine.hpp" />
+    <ClInclude Include="GameEngine\StateMachine\State.hpp" />
+    <ClInclude Include="GameEngine\StateMachine\StateMachine.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

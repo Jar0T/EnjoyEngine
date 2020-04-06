@@ -125,15 +125,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="StateMachine\StateMachine.cpp">
+    <ClCompile Include="GameEngine\StateMachine\StateMachine.cpp">
       <Filter>GameEngine\Pliki źródłowe\StateMachine</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="StateMachine\StateMachine.hpp">
+    <ClInclude Include="GameEngine\StateMachine\State.hpp">
       <Filter>GameEngine\Pliki nagłówkowe\StateMachine</Filter>
     </ClInclude>
-    <ClInclude Include="StateMachine\State.hpp">
+    <ClInclude Include="GameEngine\StateMachine\StateMachine.hpp">
       <Filter>GameEngine\Pliki nagłówkowe\StateMachine</Filter>
     </ClInclude>
   </ItemGroup>
