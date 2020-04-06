@@ -1,23 +1,13 @@
-#include <SFML/Graphics.hpp>
+#include <iostream>
+
+#include "Helpers/Definitions.hpp"
+
+#include "GameEngine/Game/Game.hpp"
 
 int main() {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+	EnjoyEngine::Game game;
 
-    while (window.isOpen())
-    {
-        sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window.close();
-        }
-
-        window.clear();
-        window.draw(shape);
-        window.display();
-    }
+	game.Init(360, 360, "Okno");
 
 	return 0;
 }

@@ -150,7 +150,53 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GameEngine\Game\Game.cpp" />
+    <ClCompile Include="GameEngine\Managers\AssetManager\AssetManager.cpp" />
+    <ClCompile Include="GameEngine\StateMachine\StateMachine.cpp" />
+    <ClCompile Include="Game\GameObjects\Player\Player.cpp" />
+    <ClCompile Include="Game\GameObjects\Slider\Slider.cpp" />
+    <ClCompile Include="Game\GameObjects\Slider\SliderBar.cpp" />
+    <ClCompile Include="Game\GameObjects\Slider\SliderButton.cpp" />
+    <ClCompile Include="Game\GameObjects\Spells\FireBall\FireBall.cpp" />
+    <ClCompile Include="Game\GameObjects\Spells\FireBall\FireBallSpell.cpp" />
+    <ClCompile Include="Game\States\MainMenuState.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameEngine\ECS\Component\Component.hpp" />
+    <ClInclude Include="GameEngine\ECS\Component\Manager\ComponentManager.hpp" />
+    <ClInclude Include="GameEngine\ECS\Component\Map\ComponentMap.hpp" />
+    <ClInclude Include="GameEngine\ECS\Component\Map\IComponentMap.hpp" />
+    <ClInclude Include="GameEngine\ECS\Entity\Entity.hpp" />
+    <ClInclude Include="GameEngine\ECS\Entity\EntityManager.hpp" />
+    <ClInclude Include="GameEngine\ECS\System\Manager\SystemManager.hpp" />
+    <ClInclude Include="GameEngine\ECS\System\System.hpp" />
+    <ClInclude Include="GameEngine\GameObjects\GameObject.hpp" />
+    <ClInclude Include="GameEngine\Game\Game.hpp" />
+    <ClInclude Include="GameEngine\Managers\AssetManager\AssetManager.hpp" />
+    <ClInclude Include="GameEngine\StateMachine\State.hpp" />
+    <ClInclude Include="GameEngine\StateMachine\StateMachine.hpp" />
+    <ClInclude Include="Game\ECS\Components\ClickableComponent.hpp" />
+    <ClInclude Include="Game\ECS\Components\ColliderComponent.hpp" />
+    <ClInclude Include="Game\ECS\Components\ComponentHeaders.hpp" />
+    <ClInclude Include="Game\ECS\Components\SpriteComponent.hpp" />
+    <ClInclude Include="Game\ECS\Components\TransformComponent.hpp" />
+    <ClInclude Include="Game\ECS\Systems\ClickableSystem.hpp" />
+    <ClInclude Include="Game\ECS\Systems\ColliderSystem.hpp" />
+    <ClInclude Include="Game\ECS\Systems\SpriteSystem.hpp" />
+    <ClInclude Include="Game\ECS\Systems\TransformSystem.hpp" />
+    <ClInclude Include="Game\GameObjects\Player\Player.hpp" />
+    <ClInclude Include="Game\GameObjects\Slider\Slider.hpp" />
+    <ClInclude Include="Game\GameObjects\Slider\SliderBar.hpp" />
+    <ClInclude Include="Game\GameObjects\Slider\SliderButton.hpp" />
+    <ClInclude Include="Game\GameObjects\Spells\FireBall\FireBall.hpp" />
+    <ClInclude Include="Game\GameObjects\Spells\FireBall\FireBallSpell.hpp" />
+    <ClInclude Include="Game\GameObjects\Spells\Spell.hpp" />
+    <ClInclude Include="Game\Managers\SettingsManager\SettingsManager.hpp" />
+    <ClInclude Include="Game\Managers\VariableManager\VariableManager.hpp" />
+    <ClInclude Include="Game\States\MainMenuState.hpp" />
+    <ClInclude Include="Helpers\Definitions.hpp" />
+    <ClInclude Include="Helpers\Vectors.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

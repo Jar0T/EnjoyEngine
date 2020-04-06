@@ -1,22 +1,266 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Pliki źródłowe">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Pliki nagłówkowe">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="Pliki zasobów">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="GameEngine">
+      <UniqueIdentifier>{eee5ec72-0380-47a7-9984-9d53c7285c7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\Pliki nagłówkowe">
+      <UniqueIdentifier>{710dbe4c-2d07-4c01-b462-c447ac4a2ee8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\Pliki nagłówkowe\ECS">
+      <UniqueIdentifier>{c621f443-26ea-4fdf-af7b-8d510223d799}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\Pliki nagłówkowe\ECS\Component">
+      <UniqueIdentifier>{cd3f678a-e287-4d25-90a2-57986cb10762}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\Pliki nagłówkowe\ECS\Component\Manager">
+      <UniqueIdentifier>{0c62fb4e-97c1-4e30-ad5e-60a093fa7c28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\Pliki nagłówkowe\ECS\Component\Map">
+      <UniqueIdentifier>{cf91acdb-3016-4b88-a063-7e30bcced5ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\Pliki nagłówkowe\ECS\Entity">
+      <UniqueIdentifier>{68557d82-0369-4041-943c-854310d08360}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\Pliki nagłówkowe\ECS\System">
+      <UniqueIdentifier>{61a03726-4bb6-40f4-a333-64ef95149e75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\Pliki nagłówkowe\ECS\System\Manager">
+      <UniqueIdentifier>{d17241ef-6a1c-4fd7-a5da-67cac4e67c64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\Pliki nagłówkowe\Game">
+      <UniqueIdentifier>{3aecab21-0769-45a5-aed8-ee50348df401}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\Pliki nagłówkowe\GameObjects">
+      <UniqueIdentifier>{cae54333-ca3b-47a3-91b4-c6c4ce1e90b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\Pliki nagłówkowe\Managers">
+      <UniqueIdentifier>{39d69eea-d13d-4fde-919d-b57e0b1ff650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\Pliki nagłówkowe\Managers\AssetManager">
+      <UniqueIdentifier>{43ec3cc0-1303-4d21-bb56-8e7d0ca33026}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\Pliki nagłówkowe\StateMachine">
+      <UniqueIdentifier>{68ce46e7-bddc-4cd7-825e-c9c868aef451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\Pliki źródłowe">
+      <UniqueIdentifier>{45e62c9b-16ae-46af-a788-f23621f0b5aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\Pliki źródłowe\AssetManager">
+      <UniqueIdentifier>{bdcc1b15-8b59-492b-9c78-63c5fc440f54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\Pliki źródłowe\Game">
+      <UniqueIdentifier>{bb146c30-fa9c-4264-a8d4-eda8ac4cf17f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\Pliki źródłowe\StateMachine">
+      <UniqueIdentifier>{fde22762-d298-4c3c-bba4-993216a3bd8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{30fee5b3-6c31-4194-b191-109e399ea350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Pliki nagłówkowe">
+      <UniqueIdentifier>{f46b032a-fff3-4e75-9fd9-e17d0b5a6ef4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Pliki nagłówkowe\ECS">
+      <UniqueIdentifier>{2de7ae72-99df-422f-86dc-0788ef6ec578}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Pliki nagłówkowe\ECS\Components">
+      <UniqueIdentifier>{2ae47d56-605c-40f6-8984-0f4333a3ad2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Pliki nagłówkowe\ECS\Systems">
+      <UniqueIdentifier>{bd933e05-339b-4f64-aa69-0a5f28d2df51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Pliki nagłówkowe\GameObjects">
+      <UniqueIdentifier>{08155fd9-f3ba-4a15-b62c-2fb04d875607}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Pliki nagłówkowe\GameObjects\Player">
+      <UniqueIdentifier>{83d93bf2-46aa-4083-8fa9-fb9f2b3065fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Pliki nagłówkowe\GameObjects\Slider">
+      <UniqueIdentifier>{88dbeb43-dff6-406d-abfe-84e7e36c502e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Pliki nagłówkowe\GameObjects\Spells">
+      <UniqueIdentifier>{d9ab0eba-a14d-4c18-9f9e-7e9003de9469}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Pliki nagłówkowe\GameObjects\Spells\FireBall">
+      <UniqueIdentifier>{d636c3d2-91d6-4611-b3ae-b8ae2afdfb30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Pliki nagłówkowe\Managers">
+      <UniqueIdentifier>{bfe31993-d6c2-46d7-8152-47e7534f5910}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Pliki nagłówkowe\Managers\SettingsManager">
+      <UniqueIdentifier>{f4cc2fc9-6089-4316-a48e-f6254b3ac2b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Pliki nagłówkowe\Managers\VariableManager">
+      <UniqueIdentifier>{bf3f2906-abe0-4dc9-bd03-78476e6190b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Pliki nagłówkowe\States">
+      <UniqueIdentifier>{bb2ff4eb-c633-4ba7-84cc-6001d34c4e6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Pliki źródłowe">
+      <UniqueIdentifier>{dd763490-5cd5-456a-b146-add461539044}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Pliki źródłowe\GameObjects">
+      <UniqueIdentifier>{d9008dc4-2603-4318-8266-0f368cf34c07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Pliki źródłowe\GameObjects\Player">
+      <UniqueIdentifier>{711cec11-4179-4658-a892-a3cde36be1f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Pliki źródłowe\GameObjects\Slider">
+      <UniqueIdentifier>{117e23d7-00b0-4407-87f3-9c4e4034fd08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Pliki źródłowe\GameObjects\Spells">
+      <UniqueIdentifier>{4e3d74de-b75e-4536-91c6-7a22b2e8ed2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Pliki źródłowe\GameObjects\Spells\FireBall">
+      <UniqueIdentifier>{1714115a-91bf-4f86-9d03-008cd42c5f47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Pliki źródłowe\States">
+      <UniqueIdentifier>{989f4429-a38a-491c-b69c-8b9fdd9af75e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers">
+      <UniqueIdentifier>{697c9047-0621-4efe-a6a6-80e930a9e46e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Pliki źródłowe</Filter>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="GameEngine\StateMachine\StateMachine.cpp">
+      <Filter>GameEngine\Pliki źródłowe\StateMachine</Filter>
     </ClCompile>
+    <ClCompile Include="GameEngine\Game\Game.cpp">
+      <Filter>GameEngine\Pliki źródłowe\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\States\MainMenuState.cpp">
+      <Filter>Game\Pliki źródłowe\States</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\Managers\AssetManager\AssetManager.cpp">
+      <Filter>GameEngine\Pliki źródłowe\AssetManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameObjects\Player\Player.cpp">
+      <Filter>Game\Pliki źródłowe\GameObjects\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameObjects\Slider\Slider.cpp">
+      <Filter>Game\Pliki źródłowe\GameObjects\Slider</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameObjects\Slider\SliderBar.cpp">
+      <Filter>Game\Pliki źródłowe\GameObjects\Slider</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameObjects\Slider\SliderButton.cpp">
+      <Filter>Game\Pliki źródłowe\GameObjects\Slider</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameObjects\Spells\FireBall\FireBall.cpp">
+      <Filter>Game\Pliki źródłowe\GameObjects\Spells\FireBall</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameObjects\Spells\FireBall\FireBallSpell.cpp">
+      <Filter>Game\Pliki źródłowe\GameObjects\Spells\FireBall</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameEngine\StateMachine\State.hpp">
+      <Filter>GameEngine\Pliki nagłówkowe\StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\StateMachine\StateMachine.hpp">
+      <Filter>GameEngine\Pliki nagłówkowe\StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\Game\Game.hpp">
+      <Filter>GameEngine\Pliki nagłówkowe\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\States\MainMenuState.hpp">
+      <Filter>Game\Pliki nagłówkowe\States</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\Managers\AssetManager\AssetManager.hpp">
+      <Filter>GameEngine\Pliki nagłówkowe\Managers\AssetManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GameObjects\GameObject.hpp">
+      <Filter>GameEngine\Pliki nagłówkowe\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\ECS\Component\Component.hpp">
+      <Filter>GameEngine\Pliki nagłówkowe\ECS\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\ECS\Component\Map\ComponentMap.hpp">
+      <Filter>GameEngine\Pliki nagłówkowe\ECS\Component\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\ECS\Component\Map\IComponentMap.hpp">
+      <Filter>GameEngine\Pliki nagłówkowe\ECS\Component\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\ECS\Component\Manager\ComponentManager.hpp">
+      <Filter>GameEngine\Pliki nagłówkowe\ECS\Component\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\ECS\Entity\Entity.hpp">
+      <Filter>GameEngine\Pliki nagłówkowe\ECS\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\ECS\Entity\EntityManager.hpp">
+      <Filter>GameEngine\Pliki nagłówkowe\ECS\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\ECS\System\Manager\SystemManager.hpp">
+      <Filter>GameEngine\Pliki nagłówkowe\ECS\System\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\ECS\System\System.hpp">
+      <Filter>GameEngine\Pliki nagłówkowe\ECS\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameObjects\Player\Player.hpp">
+      <Filter>Game\Pliki nagłówkowe\GameObjects\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameObjects\Slider\Slider.hpp">
+      <Filter>Game\Pliki nagłówkowe\GameObjects\Slider</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameObjects\Slider\SliderBar.hpp">
+      <Filter>Game\Pliki nagłówkowe\GameObjects\Slider</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameObjects\Slider\SliderButton.hpp">
+      <Filter>Game\Pliki nagłówkowe\GameObjects\Slider</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameObjects\Spells\Spell.hpp">
+      <Filter>Game\Pliki nagłówkowe\GameObjects\Spells</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameObjects\Spells\FireBall\FireBall.hpp">
+      <Filter>Game\Pliki nagłówkowe\GameObjects\Spells\FireBall</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameObjects\Spells\FireBall\FireBallSpell.hpp">
+      <Filter>Game\Pliki nagłówkowe\GameObjects\Spells\FireBall</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Managers\VariableManager\VariableManager.hpp">
+      <Filter>Game\Pliki nagłówkowe\Managers\VariableManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Managers\SettingsManager\SettingsManager.hpp">
+      <Filter>Game\Pliki nagłówkowe\Managers\SettingsManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ECS\Components\ClickableComponent.hpp">
+      <Filter>Game\Pliki nagłówkowe\ECS\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ECS\Components\ColliderComponent.hpp">
+      <Filter>Game\Pliki nagłówkowe\ECS\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ECS\Components\SpriteComponent.hpp">
+      <Filter>Game\Pliki nagłówkowe\ECS\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ECS\Components\TransformComponent.hpp">
+      <Filter>Game\Pliki nagłówkowe\ECS\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ECS\Systems\ClickableSystem.hpp">
+      <Filter>Game\Pliki nagłówkowe\ECS\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ECS\Systems\ColliderSystem.hpp">
+      <Filter>Game\Pliki nagłówkowe\ECS\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ECS\Systems\SpriteSystem.hpp">
+      <Filter>Game\Pliki nagłówkowe\ECS\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ECS\Systems\TransformSystem.hpp">
+      <Filter>Game\Pliki nagłówkowe\ECS\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Helpers\Definitions.hpp">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Helpers\Vectors.hpp">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ECS\Components\ComponentHeaders.hpp">
+      <Filter>Game\Pliki nagłówkowe\ECS\Components</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
