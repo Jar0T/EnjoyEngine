@@ -11,6 +11,7 @@ namespace EnjoyEngine {
 		entity.addComponent<TransformComponent>(position.x, position.y);
 		entity.getComponent<TransformComponent>().Velocity = velocity;
 		entity.getComponent<TransformComponent>().Rotation = angle;
+		entity.getComponent<TransformComponent>().grounded = false;
 
 		entity.addComponent<ColliderComponent>(position.x, position.y);
 		Vector2D<float> col = { -16, -16 };
