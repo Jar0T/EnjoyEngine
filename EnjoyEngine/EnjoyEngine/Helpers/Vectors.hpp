@@ -33,14 +33,23 @@ struct Vector2D {
 		return temp;
 	};
 
+	Vector2D<T> operator /(float a) {
+		Vector2D<T> temp = *this;
+		temp.x /= a;
+		temp.y /= a;
+		return temp;
+	};
+
 	float magnitude() {
-		return sqrtf((x*x) + (y*y));
+		return sqrtf((x * x) + (y * y));
 	};
 
 	Vector2D<T>& normalize() {
 		float magnitude = this->magnitude();
-		x = x / magnitude;
-		y = y / magnitude;
+		if (magnitude > 0.f) {
+			x = x / magnitude;
+			y = y / magnitude;
+		}
 		return *this;
 	};
 
@@ -94,15 +103,25 @@ struct Vector3D {
 		return temp;
 	};
 
+	Vector3D<T> operator /(float a) {
+		Vector3D<T> temp = *this;
+		temp.x /= a;
+		temp.y /= a;
+		temp.z /= a;
+		return temp;
+	};
+
 	float magnitude() {
 		return sqrtf((x*x) + (y*y) + (z*z));
 	};
 
 	Vector3D<T>& normalize() {
 		float magnitude = this->magnitude();
-		x = x / magnitude;
-		y = y / magnitude;
-		z = z / magnitude;
+		if (magnitude > 0.f) {
+			x = x / magnitude;
+			y = y / magnitude;
+			z = z / magnitude;
+		}
 		return *this;
 	};
 
