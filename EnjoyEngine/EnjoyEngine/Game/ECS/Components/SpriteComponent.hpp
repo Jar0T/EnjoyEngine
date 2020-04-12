@@ -7,6 +7,11 @@
 #include <vector>
 
 namespace EnjoyEngine {
+	enum OriginPosition {
+		MIDDLE,
+		ZERO
+	};
+
 	class SpriteComponent : public Component {
 	private:
 		std::vector<sf::Sprite> spriteVector;
@@ -23,14 +28,12 @@ namespace EnjoyEngine {
 					if ((width != 0) && (height != 0)) {
 						sprite.setTextureRect(sf::IntRect(0, (i * height), width, height));
 					}
-					sprite.setOrigin(sprite.getLocalBounds().width / 2.f, sprite.getLocalBounds().height / 2.f);
 					spriteVector.push_back(sprite);
 				}
 			}
 			else {
 				sf::Sprite sprite;
 				sprite.setTexture(AssetManager::assetManager().getTexture(textureID));
-				sprite.setOrigin(sprite.getLocalBounds().width / 2.f, sprite.getLocalBounds().height / 2.f);
 				spriteVector.push_back(sprite);
 			}
 		};
@@ -45,6 +48,30 @@ namespace EnjoyEngine {
 		sf::Sprite* getSprite() {
 			return &spriteVector[index];
 		};
+
+		void setOrigin(Vector2D<float> newOrigin) {
+			for (auto& sprite : spriteVector) {
+				sprite.setOrigin(newOrigin.x, newOrigin.y);
+			}
+		}
+
+		void setOrigin(int position) {
+			switch (position)
+			{
+			case ZERO:
+				for (auto& sprite : spriteVector) {
+					sprite.setOrigin(0.f, 0.f);
+				}
+				break;
+			case MIDDLE:
+				for (auto& sprite : spriteVector) {
+					sprite.setOrigin(sprite.getLocalBounds().width / 2.f, sprite.getLocalBounds().height / 2.f);
+				}
+				break;
+			default:
+				break;
+			}
+		}
 
 	};
 }

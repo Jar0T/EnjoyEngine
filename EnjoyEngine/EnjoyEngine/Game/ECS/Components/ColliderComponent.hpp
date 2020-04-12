@@ -26,5 +26,24 @@ namespace EnjoyEngine {
 			Points.push_back(point);
 			rotatedPoints.push_back(point);
 		}
+
+		Vector2D<float> getOrigin() {
+			float minX = INFINITY, minY = INFINITY;
+			for (auto& point : Points) {
+				if (point.x < minX)
+					minX = point.x;
+				if (point.y < minY)
+					minY = point.y;
+			}
+			return(Vector2D<float>{-minX, -minY});
+		}
+
+		void setOrigin(Vector2D<float> newOrigin) {
+			Vector2D<float> origin = getOrigin();
+			newOrigin = origin - newOrigin;
+			for (auto& point : Points) {
+				point = point + newOrigin;
+			}
+		}
 	};
 }
