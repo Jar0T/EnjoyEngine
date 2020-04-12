@@ -8,16 +8,14 @@ namespace EnjoyEngine {
 		entity.addComponent<SpriteComponent>(Textures::PLAYER_SPRITE, renderLayer, 2, 64, 64, 4);
 		entity.addComponent<ColliderComponent>(x, y);
 
-		Vector2D<float> col = { -14, -20 };
-		entity.getComponent<ColliderComponent>().addPoint(col);
-		col.x = 14;
-		entity.getComponent<ColliderComponent>().addPoint(col);
-		col.y = 20;
-		entity.getComponent<ColliderComponent>().addPoint(col);
-		col.x = -14;
-		entity.getComponent<ColliderComponent>().addPoint(col);
-
+		entity.getComponent<ColliderComponent>().addPoint(Vector2D<float>{0, 0});
+		entity.getComponent<ColliderComponent>().addPoint(Vector2D<float>{28, 0});
+		entity.getComponent<ColliderComponent>().addPoint(Vector2D<float>{28, 40});
+		entity.getComponent<ColliderComponent>().addPoint(Vector2D<float>{0, 40});
 		entity.getComponent<ColliderComponent>().object = this;
+		entity.getComponent<ColliderComponent>().setOrigin(Vector2D<float>{14, 20});
+
+		entity.getComponent<SpriteComponent>().setOrigin(MIDDLE);
 
 		mTag = Tags::Player;
 
