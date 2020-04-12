@@ -5,15 +5,16 @@ namespace EnjoyEngine {
 		entity.addComponent<TransformComponent>(x, y);
 		entity.addComponent<SpriteComponent>(Textures::SLIDER_BUTTON, renderLayer);
 		entity.addComponent<ColliderComponent>(x, y);
-		Vector2D<float> p = { -16.f, -16.f };
-		entity.getComponent<ColliderComponent>().addPoint(p);
-		p.x = 15.f;
-		entity.getComponent<ColliderComponent>().addPoint(p);
-		p.y = 15.f;
-		entity.getComponent<ColliderComponent>().addPoint(p);
-		p.x = -16.f;
-		entity.getComponent<ColliderComponent>().addPoint(p);
+
+		entity.getComponent<ColliderComponent>().addPoint(Vector2D<float>{0, 0});
+		entity.getComponent<ColliderComponent>().addPoint(Vector2D<float>{31, 0});
+		entity.getComponent<ColliderComponent>().addPoint(Vector2D<float>{31, 31});
+		entity.getComponent<ColliderComponent>().addPoint(Vector2D<float>{0, 31});
 		entity.getComponent<ColliderComponent>().object = this;
+		entity.getComponent<ColliderComponent>().setOrigin(Vector2D<float>{16, 16});
+
+		entity.getComponent<SpriteComponent>().setOrigin(MIDDLE);
+
 		entity.addComponent<ClickableComponent>();
 		entity.getComponent<ClickableComponent>().object = this;
 	};

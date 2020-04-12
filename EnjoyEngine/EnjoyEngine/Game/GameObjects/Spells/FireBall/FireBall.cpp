@@ -14,17 +14,15 @@ namespace EnjoyEngine {
 		entity.getComponent<TransformComponent>().grounded = false;
 
 		entity.addComponent<ColliderComponent>(position.x, position.y);
-		Vector2D<float> col = { -16, -16 };
-		entity.getComponent<ColliderComponent>().addPoint(col);
-		col.x = 16;
-		entity.getComponent<ColliderComponent>().addPoint(col);
-		col.y = 16;
-		entity.getComponent<ColliderComponent>().addPoint(col);
-		col.x = -16;
-		entity.getComponent<ColliderComponent>().addPoint(col);
+		entity.getComponent<ColliderComponent>().addPoint(Vector2D<float>{0, 0});
+		entity.getComponent<ColliderComponent>().addPoint(Vector2D<float>{32, 0});
+		entity.getComponent<ColliderComponent>().addPoint(Vector2D<float>{32, 32});
+		entity.getComponent<ColliderComponent>().addPoint(Vector2D<float>{0, 32});
 		entity.getComponent<ColliderComponent>().object = this;
+		entity.getComponent<ColliderComponent>().setOrigin(Vector2D<float>{16, 16});
 
 		entity.addComponent<SpriteComponent>(Textures::FIRE_BALL_SPRITE, renderLayer);
+		entity.getComponent<SpriteComponent>().setOrigin(MIDDLE);
 
 		mTag = Tags::FireBall;
 	}

@@ -4,6 +4,8 @@ namespace EnjoyEngine {
 	SliderBar::SliderBar(float x, float y, int renderLayer) {
 		entity.addComponent<TransformComponent>(x, y);
 		entity.addComponent<SpriteComponent>(Textures::SLIDER_BAR, renderLayer);
+
+		entity.getComponent<SpriteComponent>().setOrigin(MIDDLE);
 	};
 
 	SliderBar::~SliderBar() {
