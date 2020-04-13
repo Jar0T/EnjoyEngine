@@ -5,7 +5,7 @@ namespace EnjoyEngine {
 		AssetManager::assetManager().loadTexture("Assets/Sprites/BlueSorcerer.png", Textures::PLAYER_SPRITE);
 
 		entity.addComponent<TransformComponent>(x, y);
-		entity.addComponent<SpriteComponent>(Textures::PLAYER_SPRITE, renderLayer, 2, 64, 64, 4);
+		entity.addComponent<SpriteComponent>(Textures::PLAYER_SPRITE, renderLayer, 2, 0, 0, 64, 64, 4);
 		entity.addComponent<ColliderComponent>(x, y);
 
 		entity.getComponent<ColliderComponent>().addPoint(Vector2D<float>{0, 0});
